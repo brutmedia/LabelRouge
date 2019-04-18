@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		BB563B132268BF8E00882BA2 /* LabelRouge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB563B092268BF8E00882BA2 /* LabelRouge.framework */; };
-		BB563B182268BF8E00882BA2 /* LabelRougeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB563B172268BF8E00882BA2 /* LabelRougeTests.swift */; };
 		BB563B1A2268BF8E00882BA2 /* LabelRouge.h in Headers */ = {isa = PBXBuildFile; fileRef = BB563B0C2268BF8E00882BA2 /* LabelRouge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB563B242268C02800882BA2 /* LabelRouge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB563B232268C02800882BA2 /* LabelRouge.swift */; };
 		BB563B252268C02800882BA2 /* LabelRouge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB563B232268C02800882BA2 /* LabelRouge.swift */; };
 		BB563B272268C03B00882BA2 /* LineWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB563B262268C03B00882BA2 /* LineWrapper.swift */; };
 		BB563B282268C03B00882BA2 /* LineWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB563B262268C03B00882BA2 /* LineWrapper.swift */; };
+		BB563B492268D09000882BA2 /* LineWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB563B482268D09000882BA2 /* LineWrapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,10 +31,10 @@
 		BB563B0C2268BF8E00882BA2 /* LabelRouge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelRouge.h; sourceTree = "<group>"; };
 		BB563B0D2268BF8E00882BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB563B122268BF8E00882BA2 /* LabelRougeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabelRougeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB563B172268BF8E00882BA2 /* LabelRougeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelRougeTests.swift; sourceTree = "<group>"; };
 		BB563B192268BF8E00882BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB563B232268C02800882BA2 /* LabelRouge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelRouge.swift; sourceTree = "<group>"; };
 		BB563B262268C03B00882BA2 /* LineWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineWrapper.swift; sourceTree = "<group>"; };
+		BB563B482268D09000882BA2 /* LineWrapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineWrapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 		BB563B162268BF8E00882BA2 /* LabelRougeTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB563B172268BF8E00882BA2 /* LabelRougeTests.swift */,
+				BB563B482268D09000882BA2 /* LineWrapperTests.swift */,
 				BB563B192268BF8E00882BA2 /* Info.plist */,
 			);
 			path = LabelRougeTests;
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB563B182268BF8E00882BA2 /* LabelRougeTests.swift in Sources */,
+				BB563B492268D09000882BA2 /* LineWrapperTests.swift in Sources */,
 				BB563B252268C02800882BA2 /* LabelRouge.swift in Sources */,
 				BB563B282268C03B00882BA2 /* LineWrapper.swift in Sources */,
 			);
