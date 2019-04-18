@@ -1,0 +1,22 @@
+language: objective-c
+osx_image: xcode10.2
+xcode_project: LabelRouge
+xcode_scheme: LabelRouge
+env:
+  global:
+  - FRAMEWORK_NAME=LabelRouge
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+before_deploy:
+- carthage build --no-skip-current
+- carthage archive $FRAMEWORK_NAME
+deploy:
+  provider: releases
+  api_key:
+    secure: ClhyLkamjxecyx0Bl7NL06Fjrv3FYTBkCMQSmAP16krpMDUX2AV6+Xehd0LcxCGTSKDnkUxZSlOJ0L/B2QWxk6mjtJ5aLsdyBQvVxCeMFyZsmVGJDe3+94qRXNfSUPfM9gNrhmlWZk99wKENb7IAHOcWFJZYiDicAonTewCQ+G7CJZy1r85itlhs3/gSytt8ZuNNw1GGXIvfI9gafrXpaw2n1vSmrztpGMn+qDYaE+cRT3ryo245iVPZTadm8oIjdwJvCbKs8K7dpurG+8rba2YI2eI7rGv0BGmIHEU5F13SJYskW8/qmYT7g09gd4uTMXMYNKetj3BzKfEqFJoq0I8rqW58mBGFF1pSxtpeq6ZUNTnMRM48KPEhH/BWfZWDxlsqYZRPktfQ8rHYmup9jNBKJmLoAldy3d7qzFh6D+DZwFx1Y1zE0RjI5Ud1Kr/g9D6sH7+Ua8PmNvaFLTxANSZIXyhAqVQB4qjvUJrAX8jAG3yefnUcVeAJZLW2KmGhDbEderXl7y4kc9RzrKJ0Jicnk4WhKwMbCxJc/NfaCrjzgSGTVjHYSXwul6N7GbUy5CcbpRbQnFULcro6gl6LVT8Ncn6fAP8yJD2ZzpbyQssgsX4N9IsnJ2AzCSYmi6Vf8lU4DZHh0c+plrrOP8BmD87Bi8pYIgdGoSqICligwas=
+  file: "$FRAMEWORK_NAME.framework.zip"
+  skip_cleanup: true
+  on:
+    repo: brutmedia/labelrouge
+    tags: true
