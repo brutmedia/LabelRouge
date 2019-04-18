@@ -13,6 +13,8 @@
 		BB563B252268C02800882BA2 /* LabelRouge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB563B232268C02800882BA2 /* LabelRouge.swift */; };
 		BB563B272268C03B00882BA2 /* LineWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB563B262268C03B00882BA2 /* LineWrapper.swift */; };
 		BB563B282268C03B00882BA2 /* LineWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB563B262268C03B00882BA2 /* LineWrapper.swift */; };
+		BB563B2C2268CF9300882BA2 /* LabelRouge.swift in Headers */ = {isa = PBXBuildFile; fileRef = BB563B232268C02800882BA2 /* LabelRouge.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB563B2D2268CF9300882BA2 /* LineWrapper.swift in Headers */ = {isa = PBXBuildFile; fileRef = BB563B262268C03B00882BA2 /* LineWrapper.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		BB563B492268D09000882BA2 /* LineWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB563B482268D09000882BA2 /* LineWrapperTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,7 +103,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB563B2C2268CF9300882BA2 /* LabelRouge.swift in Headers */,
 				BB563B1A2268BF8E00882BA2 /* LabelRouge.h in Headers */,
+				BB563B2D2268CF9300882BA2 /* LineWrapper.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,9 +1,9 @@
 import UIKit
 import WebKit
 
-class LabelRouge: UILabel {
-    var highlightColor: UIColor = .yellow
-    var highlightInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
+public class LabelRouge: UILabel {
+    public var highlightColor: UIColor = .yellow
+    public var highlightInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
 
     private let wrapper = LineWrapper()
 
@@ -22,7 +22,7 @@ class LabelRouge: UILabel {
         commonInit()
     }
 
-    func commonInit() {
+    private func commonInit() {
         isOpaque = false
         backgroundColor = .clear
         clearsContextBeforeDrawing = true
@@ -36,7 +36,7 @@ class LabelRouge: UILabel {
         return wrapper.wrap(paragraph: text, to: paddedWidth, attributes: textAttributes)
     }
 
-    override func drawText(in rect: CGRect) {
+    override public func drawText(in rect: CGRect) {
         guard let text = text, !text.isEmpty else { return }
 
         let context = UIGraphicsGetCurrentContext()
@@ -58,7 +58,7 @@ class LabelRouge: UILabel {
         wrappedText.draw(at: rect.inset(by: highlightInsets).origin)
     }
 
-    override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+    override public func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
         guard let text = text, !text.isEmpty else { return .zero }
 
         let textSize = wrappedText(for: text, width: bounds.width).size()
